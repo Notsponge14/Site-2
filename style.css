@@ -1,0 +1,445 @@
+*{
+  font-family: "Inter", system-ui;
+  font-optical-sizing: auto;
+}
+
+body {
+  position: relative;
+  height: 340vh;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+body::before {
+  padding-left: 100px;
+  content: '';
+  position: absolute;
+  top: -1vh;
+  left: -2vw;
+  width: 100%;
+  height: 40%;
+  background-color: #141f39;
+}
+
+body::after {
+  padding-left: 100px;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -2vw;
+  width: 100%;
+  height: 28%;
+  background-color: #FAFAFA;
+}
+
+
+
+ul {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 33vw;
+  list-style: none;
+  color: white;
+  margin-top: 2vw;
+  scale: 1.1;
+}
+
+li {
+  cursor: pointer;
+  margin: 1.5vw;
+  font-size: 1.3rem;
+}
+
+li img {
+  position: absolute;
+  right: 98vh;
+  bottom: 1.3vw;
+  height: 3.5vh;
+}
+li button {
+  position: absolute;
+  background: #38DA71;
+  border: none;
+  border-radius: 7px;
+  height: 4.8vh;
+  width: 7vw;
+  bottom: 0.8vw;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 1vw;
+}
+
+main h1 {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 30vh;
+  color: white;
+  font-size: 5rem;
+  z-index: 2;
+}
+
+main h3 {
+  position: absolute;
+  left: 39vw;
+  top: 51vh;
+  color: #a5a5a5;
+  font-size: 1.1rem;
+  text-align: center;
+  font-weight: 320;
+}
+
+.rect1 {
+  position: absolute;
+  left: 35vw;
+  top: 34vh;
+  z-index: 1;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  text-align: ce;
+}
+
+.button1 {
+  position: absolute;
+  top: 63vh;
+  left: 42vw;
+  background: #38DA71;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  height: 5vh;
+  width: 8vw;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.button1:hover {
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid white;
+}
+
+
+.button2 {
+  position: absolute;
+  top: 63vh;
+  left: 52vw;
+  background: transparent;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  height: 5vh;
+  width: 8vw;
+  font-size: 1rem;
+  border: 2px solid white;
+  cursor: pointer;
+  overflow: hidden;
+  text-align: center;
+}
+
+.button2 i {
+  width: 34px;
+  margin-left: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.button2:hover i {
+  transform: translateX(50px);
+}
+
+.button2:active {
+  transform: scale(0.95);
+}
+
+
+.Conditions {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+  width: 100%;
+  top: 72vh;
+  color:  #a5a5a5;
+}
+
+p {
+  margin: 33px;
+}
+
+.fa-check {
+  position: relative;
+  color: #38DA71;
+  right: 0.6vw;
+}
+
+.images {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-flow: nowrap;
+  justify-content: center;
+  width: 100%;
+  top: 83vh;
+}
+
+.images img {
+  margin: 20px;
+}
+
+.imgtext {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: white;
+  top: 116vh;
+}
+
+.imgtext1 {
+  position: absolute;
+  left: 50.6vh;
+}
+
+.imgtext2 {
+  position: absolute;
+  left: 83vh;
+}
+
+.imgtext3 {
+  position: absolute;
+  left: 115.5vh;
+}
+
+.imgtext i {
+  color: #38DA71;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  left: 27.8vh;
+  bottom: 0.1vw;
+}
+
+.midlane {
+  position: absolute;
+  display: flex;
+  flex-wrap: nowrap;
+  top: 125vh;
+  scale: 0.7;
+  left: -31vw;
+  padding: 0px 800px 0px 800px;
+  width: 100%;
+  background-color: #15BEE3;
+}
+
+
+.main2 h1 {
+  z-index: 1;
+  position: absolute;
+  top: 150vh;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  color: #141F39;
+  font-size: 4rem;
+}
+
+.main2 h3 {
+  position: absolute;
+  top: 160vh;
+  z-index: 1;
+  position: absolute;
+  left: 37vw;
+  color: #a5a5a5;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+.cards {
+  position: absolute;
+  top: 180vh;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  left: 20vw;
+}
+
+.card1 {
+  width: 16vw;
+  height: 30vh;
+  margin: 30px;
+  background-color: #FFFFFF;
+}
+
+.card2 {
+  width: 16vw;
+  height: 30vh;
+  margin: 30px;
+  background-color: #FFFFFF;
+}
+
+.card3 {
+  width: 16vw;
+  height: 30vh;
+  margin: 30px;
+  background-color: #FFFFFF;
+}
+
+.cards img {
+  position: absolute;
+  top: 9vh;
+  padding-left: 40px;
+}
+
+.cards h2 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  top: 13.2vh;
+  padding-left: 42px;
+}
+
+.cards h3 {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  top: 16.5vh;
+  padding-left: 46px;
+  font-weight: 300;
+  color: #a5a5a5;
+}
+
+h4 {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  top: 40vh;
+  width: 100%;
+  font-weight: 400;
+  color: grey;
+  left: 19vw;
+}
+
+.main3 h1 {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  top: 80vh;
+  right: -1.2vw;
+  font-size: 4rem;
+  font-weight: 650;
+  width: 100%;
+  line-height: 90px;
+}
+
+.main3 h3 {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  top: 100vh;
+  right: -1.2vw;
+  color: #a5a5a5;
+  font-weight: 300;
+  width: 100%;
+}
+
+.hr {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #D4D4D8;
+  width: 24vw;
+  height: 0.1vw;
+  z-index: 1;
+  top: 110vh;
+  right: 29.8vw;
+}
+
+.main3 h2 {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  top: 115vh;
+  width: 100%;
+  right: 16.5vw;
+  font-size: 2.3rem;
+  z-index: 2;
+}
+
+.main3 h4 {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  top: 120vh;
+  width: 100%;
+  left: 1.2vw;
+  z-index: 2;
+}
+
+.rect2 {
+  position: relative;
+  margin-left: -1435px;
+  z-index: 1;
+  margin-top: 1355px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.main4 h2 {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  top: 126vh;
+  width: 100%;
+  right: 19.6vw;
+  font-size: 2.3rem;
+  z-index: 2;
+}
+
+.main4 h4 {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  top: 130.7vh;
+  width: 100%;
+  left: 1.1vw;
+  z-index: 2;
+}
+
+.rect3 {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: -1440px;
+    z-index: 1;
+    margin-top: 1505px;
+}
+
+.bank {
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  margin-top: 810px;
+  margin-left: -820px;
+  height: 1100px;
+}
